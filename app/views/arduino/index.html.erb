@@ -1,0 +1,21 @@
+<h1>Test</h1>
+<div class="row">
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "UP", :controller => "arduino", :action => "up" %></button></div>
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "DOWN", :controller => "arduino", :action => "down" %></button></div>
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LEFT", :controller => "arduino", :action => "left" %></button></div>
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "RIGHT", :controller => "arduino", :action => "right" %></button></div> 
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LED ON", :controller => "arduino", :action => "on" %></button></div> 
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LED OFF", :controller => "arduino", :action => "off" %></button></div> 
+  
+</div>
+
+<img src="http://localhost:8081/">
+
+<h1>Position of X axis: <%= @servox.position %></h1>
+<h1>Position of Y axis: <%= @servoy.position %></h1>
