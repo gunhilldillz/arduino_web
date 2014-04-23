@@ -34,3 +34,8 @@ end
 
 # User dino -- arduino ruby interface
 gem 'dino'
+gem 'faker'
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+gem 'therubyracer'
+gem 'bcrypt-ruby', '~> 3.1.2'
