@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140420015548) do
+ActiveRecord::Schema.define(version: 20140423162529) do
 
   create_table "arduinos", force: true do |t|
     t.integer  "position"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(version: 20140420015548) do
 
   create_table "servoposxes", force: true do |t|
     t.integer  "xloc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.string   "name"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
