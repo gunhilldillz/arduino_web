@@ -8,11 +8,8 @@
   <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LEFT", :controller => "arduino", :action => "left" %></button></div>
 
   <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "RIGHT", :controller => "arduino", :action => "right" %></button></div> 
+  <div class="col-md-1">   <input type="button" value="OFF" id="off" onclick="toggleState(this)" class="btn btn-success" /> </div>
 
-  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LED ON", :controller => "arduino", :action => "on" %></button></div> 
-
-  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LED OFF", :controller => "arduino", :action => "off" %></button></div> 
-  
 </div>
 
 <img src="http://localhost:8081/">

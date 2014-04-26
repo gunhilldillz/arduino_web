@@ -1,6 +1,8 @@
 class ArduinoController < ApplicationController
 
 before_filter :set_up_servo
+before_filter :set_up_led, only: [:on, :off]
+
 
 # These are all functions that are not representative of our final controller methods
 # All of these methods are here to show that 'Arduinos' can be created and controlled by 
@@ -48,6 +50,16 @@ before_filter :set_up_servo
 
   end
 
+  def on
+    @led.on
+    render :nothing => true
+  end
+
+  def off
+    @led.off
+    render :nothing => true
+  end
+
   def right
 
     @pos = Servoposx.all
@@ -59,16 +71,6 @@ before_filter :set_up_servo
 
   end
 
-  def on
-    @led.on
-    redirect_to root_path
-  end
-
-  def off
-    @led.off
-    redirect_to root_path
-
-  end
 
   def increment!
     # Here 'period_id' is valid since it is an attribute and a method 
@@ -82,5 +84,8 @@ before_filter :set_up_servo
     @led = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
     
   end
-
+  
+  def set_up_led
+    @led = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
+  end
 end
