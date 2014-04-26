@@ -6,7 +6,7 @@ DinoRails::Application.routes.draw do
   resources :users
   resources :sessions
   root to: 'home#index'
-# root to: 'arduino#index'
+  get '/arduino' => 'arduino#index'
   get '/up' => 'arduino#up'
   get '/down' => 'arduino#down'
   get '/left' => 'arduino#left'

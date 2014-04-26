@@ -56800,3 +56800,839 @@ Started GET "/login" for 127.0.0.1 at 2014-04-23 22:09:06 -0400
 Processing by SessionsController#new as HTML
   Rendered sessions/new.html.erb within layouts/application (1.7ms)
 Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:43:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 372ms (Views: 355.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-24 20:43:40 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-04-24 20:43:45 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (988.7ms)
+Completed 200 OK in 1068ms (Views: 998.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pm7UtwUe7qZZFKRP+3SitI2C2G4XEy9p6z2PkloHpao=", "user"=>{"name"=>"Elijah", "email"=>"elgachuhi@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'elgachuhi@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 167ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:14 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-04-24 20:44:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pm7UtwUe7qZZFKRP+3SitI2C2G4XEy9p6z2PkloHpao=", "user"=>{"name"=>"Elijah", "email"=>"elgachuhi+testing@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'elgachuhi+testing@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (261.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Apr 2014 00:44:40 UTC +00:00], ["email", "elgachuhi+testing@gmail.com"], ["name", "Elijah"], ["password_digest", "$2a$10$hMU/Dfx5AysIGMpeBdtCzOQkJMPJVcFnX.50n4dhXn2BLIekw9skO"], ["updated_at", Fri, 25 Apr 2014 00:44:40 UTC +00:00]]
+  [1m[35m (201.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 549ms (ActiveRecord: 462.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:44:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 20:44:41 -0400
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-04-24 20:46:32 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:32 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:38 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:41 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:42 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:48 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 20:46:51 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:47:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 888ms (Views: 847.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:44 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:45 -0400
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.2ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.2ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 220ms (Views: 78.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-26 08:47:54 -0400
+
+
+Started GET "/off" for 127.0.0.1 at 2014-04-26 08:47:59 -0400
+Processing by ArduinoController#off as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:47:59 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:04 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:05 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:05 -0400
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.4ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.3ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 50ms (Views: 41.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/arduino.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/arduino.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-26 08:48:13 -0400
+
+
+Started GET "/on" for 127.0.0.1 at 2014-04-26 08:48:24 -0400
+Processing by ArduinoController#on as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:48:24 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/on" for 127.0.0.1 at 2014-04-26 08:48:33 -0400
+Processing by ArduinoController#on as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:48:33 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/right" for 127.0.0.1 at 2014-04-26 08:48:38 -0400
+Processing by ArduinoController#right as HTML
+  [1m[35mServoposx Load (0.3ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (84.4ms)[0m  INSERT INTO "servoposxes" ("created_at", "updated_at", "xloc") VALUES (?, ?, ?)  [["created_at", Sat, 26 Apr 2014 12:48:38 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 12:48:38 UTC +00:00], ["xloc", 470]]
+  [1m[36m (269.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arduino
+Completed 302 Found in 385ms (ActiveRecord: 354.5ms)
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:48:38 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.5ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.3ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 47ms (Views: 37.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/right" for 127.0.0.1 at 2014-04-26 08:48:39 -0400
+Processing by ArduinoController#right as HTML
+  [1m[35mServoposx Load (0.2ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "servoposxes" ("created_at", "updated_at", "xloc") VALUES (?, ?, ?)  [["created_at", Sat, 26 Apr 2014 12:48:39 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 12:48:39 UTC +00:00], ["xloc", 480]]
+  [1m[36m (324.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arduino
+Completed 302 Found in 333ms (ActiveRecord: 324.8ms)
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:48:39 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.5ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.3ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 16.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/off" for 127.0.0.1 at 2014-04-26 08:48:40 -0400
+Processing by ArduinoController#off as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:48:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/on" for 127.0.0.1 at 2014-04-26 08:48:48 -0400
+Processing by ArduinoController#on as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:48:48 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/down" for 127.0.0.1 at 2014-04-26 08:48:52 -0400
+Processing by ArduinoController#down as HTML
+  [1m[35mServoposy Load (0.3ms)[0m  SELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "servoposies" ("created_at", "updated_at", "yloc") VALUES (?, ?, ?)  [["created_at", Sat, 26 Apr 2014 12:48:52 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 12:48:52 UTC +00:00], ["yloc", 80]]
+  [1m[36m (232.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arduino
+Completed 302 Found in 247ms (ActiveRecord: 233.6ms)
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:48:53 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.3ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.2ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 38.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/up" for 127.0.0.1 at 2014-04-26 08:48:55 -0400
+Processing by ArduinoController#up as HTML
+  [1m[35mServoposy Load (1.0ms)[0m  SELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "servoposies" ("created_at", "updated_at", "yloc") VALUES (?, ?, ?)  [["created_at", Sat, 26 Apr 2014 12:48:55 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 12:48:55 UTC +00:00], ["yloc", 90]]
+  [1m[36m (306.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arduino
+Completed 302 Found in 318ms (ActiveRecord: 307.9ms)
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:48:55 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.5ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.3ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 18.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/up" for 127.0.0.1 at 2014-04-26 08:48:55 -0400
+Processing by ArduinoController#up as HTML
+  [1m[35mServoposy Load (0.2ms)[0m  SELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "servoposies" ("created_at", "updated_at", "yloc") VALUES (?, ?, ?)  [["created_at", Sat, 26 Apr 2014 12:48:55 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 12:48:55 UTC +00:00], ["yloc", 100]]
+  [1m[36m (330.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arduino
+Completed 302 Found in 339ms (ActiveRecord: 330.8ms)
+
+
+Started GET "/arduino" for 127.0.0.1 at 2014-04-26 08:48:56 -0400
+Processing by ArduinoController#index as HTML
+  [1m[35mServoposx Load (0.5ms)[0m  SELECT "servoposxes".* FROM "servoposxes" ORDER BY "servoposxes"."id" DESC LIMIT 1
+  [1m[36mServoposy Load (0.4ms)[0m  [1mSELECT "servoposies".* FROM "servoposies" ORDER BY "servoposies"."id" DESC LIMIT 1[0m
+  Rendered arduino/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 20.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/on" for 127.0.0.1 at 2014-04-26 08:48:58 -0400
+Processing by ArduinoController#on as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-26 08:48:58 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
