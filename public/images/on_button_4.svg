@@ -15,19 +15,9 @@
    id="svg5551"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="on_button.svg">
+   sodipodi:docname="on_button_3.svg">
   <defs
      id="defs5553">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4293"
-       id="linearGradient5521"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-991.30956,3.9285542)"
-       x1="125.28572"
-       y1="134.50504"
-       x2="270.42859"
-       y2="251.6479" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient4293">
@@ -81,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -183,7 +173,7 @@
            y="439.37753"
            x="362.49142"
            id="tspan3116"
-           sodipodi:role="line">1</tspan></text>
+           sodipodi:role="line">4</tspan></text>
     </g>
   </g>
 </svg>

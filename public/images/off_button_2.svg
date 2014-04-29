@@ -15,7 +15,7 @@
    id="svg5634"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="off_button.svg">
+   sodipodi:docname="off_button_1.svg">
   <defs
      id="defs5636">
     <linearGradient
@@ -48,7 +48,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
+     inkscape:zoom="1.4"
      inkscape:cx="258.87531"
      inkscape:cy="245.60851"
      inkscape:document-units="px"
@@ -58,11 +58,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="927"
-     inkscape:window-height="1028"
-     inkscape:window-x="992"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
      inkscape:window-y="24"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5639">
     <rdf:RDF>
@@ -71,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -149,30 +149,26 @@
            style="fill:#d40055;fill-opacity:0.88627451;stroke:none" />
       </g>
     </g>
-    <g
-       id="g3905"
-       transform="translate(9.5367432e-6,10e-6)">
-      <rect
-         ry="15"
-         rx="15"
-         y="396.58298"
-         x="347.22083"
-         height="55.558392"
-         width="55.558392"
-         id="rect3112"
-         style="fill:#999999;fill-opacity:0.88627451;stroke:#000000;stroke-width:5.0999999;stroke-miterlimit:4;stroke-opacity:0.24657533;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3114"
-         y="439.37753"
+    <rect
+       style="fill:#999999;fill-opacity:0.88627451;stroke:#000000;stroke-width:5.0999999;stroke-miterlimit:4;stroke-opacity:0.24657533;stroke-dasharray:none"
+       id="rect3112"
+       width="55.558392"
+       height="55.558392"
+       x="347.22083"
+       y="396.58298"
+       rx="15"
+       ry="15" />
+    <text
+       xml:space="preserve"
+       style="font-size:43.33436584px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ececec;fill-opacity:1;stroke:none;font-family:Sans"
+       x="362.49142"
+       y="439.37753"
+       id="text3114"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3116"
          x="362.49142"
-         style="font-size:43.33436584px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ececec;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#ececec;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium"
-           y="439.37753"
-           x="362.49142"
-           id="tspan3116"
-           sodipodi:role="line">1</tspan></text>
-    </g>
+         y="439.37753"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#ececec;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium">2</tspan></text>
   </g>
 </svg>
