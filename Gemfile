@@ -32,10 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# User dino -- arduino ruby interface
 gem 'dino'
 gem 'faker'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'bcrypt-ruby', '~> 3.1.2'
+
+# better errors
+
+gem 'better_errors', '~> 1.1.0'

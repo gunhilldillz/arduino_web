@@ -1,5 +1,7 @@
 class ArduinoController < ApplicationController
 
+layout "arduino"
+
 before_filter :set_up_servo
 before_filter :set_up_led, only: [:on, :off]
 

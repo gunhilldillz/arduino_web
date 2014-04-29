@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="303"
+   height="303"
+   id="svg4711"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 19">
+  <defs
+     id="defs4713">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4293"
+       id="linearGradient4327"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(380,360)"
+       x1="125.28572"
+       y1="134.50504"
+       x2="270.42859"
+       y2="251.6479" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4293">
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="0"
+         id="stop4295" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:0;"
+         offset="1"
+         id="stop4297" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="151.5134"
+     inkscape:cy="151.49048"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="472"
+     inkscape:window-height="383"
+     inkscape:window-x="65"
+     inkscape:window-y="669"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4716">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-223.4866,-380.85266)">
+    <g
+       transform="translate(-177.85715,-1.4285889)"
+       id="g4381">
+      <rect
+         ry="36.070835"
+         rx="35.543098"
+         y="383.79077"
+         x="402.85715"
+         height="300"
+         width="300"
+         id="rect4317"
+         style="fill:#ffffff;fill-opacity:0.8851064;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.42465754;stroke-dasharray:none" />
+      <rect
+         style="fill:url(#linearGradient4327);fill-opacity:1;stroke:#000000;stroke-width:2.90806222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.34703196;stroke-dasharray:none"
+         id="rect4319"
+         width="290.80621"
+         height="290.80621"
+         x="407.45404"
+         y="388.38763"
+         rx="34.453846"
+         ry="34.965412" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4321"
+         d="m 631.95527,484.01117 -81.70191,-81.70193 0,46.60555 -76.49435,0 0,70.19275 76.49435,0 0,46.60554 81.70191,-81.70191 z"
+         style="fill:#4d4d4d;fill-opacity:0.8851064;stroke:#000000;stroke-width:4.20106268;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.42465754;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4323"
+         y="649.1333"
+         x="430.7305"
+         style="font-size:83.92457581px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#666666;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+           y="649.1333"
+           x="430.7305"
+           id="tspan4325"
+           sodipodi:role="line">RIGHT</tspan></text>
+    </g>
+  </g>
+</svg>
