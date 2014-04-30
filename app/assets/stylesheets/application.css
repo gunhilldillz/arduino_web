@@ -5796,4 +5796,8 @@ button.close {
     display: none !important;
   }
 }
+.on_off_btn{
+    height: 110px;
+    width: 110px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
