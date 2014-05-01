@@ -1,3 +1,24 @@
-<h1>Welcome to the Homepage</h1>
+<div id="wrapper">
 
-<p> asldfajfd f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj f asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfj  aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as dfajfd aslfdkjasdf asldfj asdlkfja sfdlaksjdf asd;lfj asdfa ;sljf sladjf asdf a;lskdjf as </p>
+<h1>Final Project</h1>
+<h2>Rails - Arduino Home Control</h2>
+
+
+<p>This app allows you to control devices in your home.</p>
+
+
+<div class="session-controls">
+            <% if current_user %>
+              <%= link_to "Log Out", logout_path, :class => 'btn btn-primary btn-mini' %>
+              Logged in as <%= current_user.email %>.
+            <% else %>
+
+
+                <button type="button" class="btn btn-primary btn-lg"><%= link_to "Sign Up", signup_path %></button>
+
+
+                <button type="button" class="btn btn-default btn-lg btn-block col-md-2"><%= link_to "Log In", login_path %></button>
+             
+            <% end %>
+         </div>
+</div>

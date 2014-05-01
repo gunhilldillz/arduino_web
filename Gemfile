@@ -42,3 +42,4 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # better errors
 
 gem 'better_errors', '~> 1.1.0'
+gem 'debugger'
