@@ -12,11 +12,11 @@
   width: 850px;
   height: 800px;
   display: block;
-  border: 3px dashed rgb(38, 102, 166);
+  border: 1px dashed rgb(244, 242, 244);
   margin: 0 auto;
   margin-top: 30px;
   padding: 30px;
-  background-color: rgb(178, 194, 247);
+  background-color: rgb(219, 219, 219);
   border-radius: 10px;
   font-family: 'Francois One', sans-serif;
 
@@ -26,58 +26,44 @@
 
 #eventboxleft {
 
-  width: 220px;
-  height: 230px;
-  border: 3px dashed white;
-  background-color: rgb(213, 203, 245);
+  width: 400px;
+  height: 150px;
+  border: 1px dashed white;
+  background-color: rgb(219, 219, 219);
   display: inline-block;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 7px rgb(34, 92, 149);
+  box-shadow: 0px 0px 7px rgb(100, 100, 100);
+
 
 }
 
-#eventboxlefta {
+#eventboxleft:hover {
 
-  width: 220px;
-  height: 230px;
-  border: 3px dashed white;
-  background-color: rgb(213, 203, 245);
-  display: inline-block;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 7px rgb(34, 92, 149);
+  background-color: rgb(73, 241, 112);
 
 }
+
+#eventboxright:hover {
+
+  background-color: rgb(135, 156, 207);
+
+}
+
 
 #eventboxright {
 
   float: right;
-  width: 220px;
-  height: 230px;
-  border: 3px dashed white;
-  background-color: rgb(213, 203, 245);
+  width: 400px;
+  height: 150px;
+  border: 1px dashed white;
+  background-color: rgb(219, 219, 219);
   display: inline-block;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 7px rgb(34, 92, 149);
+  box-shadow: 0px 0px 7px rgb(100, 100, 100);
 
 }
-
-#eventboxrighta {
-
-  float: right;
-  width: 220px;
-  height: 230px;
-  border: 3px dashed white;
-  background-color: rgb(213, 203, 245);
-  display: inline-block;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 7px rgb(34, 92, 149);
-
-}
-
 
 /* style text */
 
@@ -120,9 +106,31 @@ h2 {
   color: rgb(78, 85, 108);
 }
 
+small {
+
+  font-size: 20px;
+  text-align: center;
+  color: rgb(78, 85, 108);
+  font-family: 'Francois One', sans-serif;
+  margin-top: 20px;
+
+}
+
 p  {
 
   font-size: 30px;
   text-align: center;
   color: rgb(78, 85, 108);
+}
+
+a {
+
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+
+}
+
+small {
+
+  display: block;
 }
