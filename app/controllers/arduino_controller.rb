@@ -3,8 +3,7 @@ class ArduinoController < ApplicationController
 layout "arduino"
 
 before_filter :set_up_servo
-before_filter :set_up_led, only: [:on, :off]  
-  
+ 
   def index
 
     @servox.position = Servoposx.last.xloc
@@ -22,6 +21,7 @@ before_filter :set_up_led, only: [:on, :off]
     redirect_to :back
 
   end
+
 
   def down
 
@@ -45,22 +45,6 @@ before_filter :set_up_led, only: [:on, :off]
 
   end
 
-  def on
-    @led.on
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    render nothing: true
-  end
-
-  def off
-    @led.off
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    render nothing: true
-  end
-
   def right
 
     @pos = Servoposx.all
@@ -72,15 +56,108 @@ before_filter :set_up_led, only: [:on, :off]
 
   end
 
+  def one_on
+   
+    @led_one.on
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    
+   render :nothing => true
+  
+  end
+
+  
+
+  def one_off
+    
+    @led_one.off
+
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    render :nothing => true
+  end
+
+  def two_on
+   
+    @led_two.on
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    
+   render :nothing => true
+  
+  end
+
+  
+
+  def two_off
+    
+    @led_two.off
+
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    render :nothing => true
+  end
+
+  def three_on
+   
+    @led_three.on
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    
+   render :nothing => true
+  
+  end
+
+  
+
+  def three_off
+    
+    @led_three.off
+
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    render :nothing => true
+  end
+
+  def four_on
+   
+    @led_four.on
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    
+   render :nothing => true
+  
+  end
+
+  
+
+  def four_off
+    
+    @led_four.off
+
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
+    
+    render :nothing => true
+ 
+  end
+
   def set_up_servo
     @servox = Dino::Components::Servo.new(pin: 9, board: DinoRails::Application.config.board)
     @servoy = Dino::Components::Servo.new(pin: 10, board: DinoRails::Application.config.board)
-    @led = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
+    @led_one = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
+    @led_two = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
+    @led_three = Dino::Components::Led.new(pin: 8, board: DinoRails::Application.config.board)
+    @led_four = Dino::Components::Led.new(pin: 7, board: DinoRails::Application.config.board)
     
   end
   
-  def set_up_led
-    @led = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
-   
-  end
+  
 end
