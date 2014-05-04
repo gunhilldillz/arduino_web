@@ -21,6 +21,8 @@ DinoRails::Application.routes.draw do
   get '/four_on' => 'arduino#four_on'
   get '/four_off' => 'arduino#four_off'
 
+  get '/reset' => 'arduino#reset'
+
 end
 
  

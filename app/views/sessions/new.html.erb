@@ -1,14 +1,20 @@
-<div id="wrapper">
 <h1>Login</h1>
+
+<br>
+<hr>
+
 <%= form_tag sessions_path do %>
   
-    <h2><%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email]%> </h2>
-  
-  <div class="field">
+	<h2><%= label_tag :email %><br />
+    <%= text_field_tag :email, params[:email]%>
     <%= label_tag :password %><br />
     <%= text_field_tag :password, params[:password], :type => "password" %> 
-  </div>
-  <div class="actions"><%= submit_tag "Log In" %></div>
+  
+<br>
+<hr>
+<br>
+  
+  <%= submit_tag "Log In" %>
+  </h2>
+  
 <% end %>
-</div>

@@ -39,6 +39,19 @@ before_filter :set_up_servo
 
   end
 
+  def reset
+
+    Servoposy.create(yloc: 90.to_i)
+    Servoposx.create(xloc: 90.to_i)
+    Led1pos.create(on_off: "off")
+    Led2pos.create(on_off: "off")
+    Led3pos.create(on_off: "off")
+    Led4pos.create(on_off: "off")
+
+    redirect_to :back
+
+  end
+
   def up
 
     @pos = Servoposy.all

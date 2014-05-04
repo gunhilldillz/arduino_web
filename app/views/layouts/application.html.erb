@@ -11,9 +11,15 @@
 
 <small><%=flash[:notice] if flash[:notice] %></small>
 <small><%=flash[:alert] if flash[:alert] %></small>
- 
+
+<div id="wrapper">
+
 <%= yield %>
 
+</div>
+
 </body>
+
 <small>Joseph Rivera - Elijah Gachuhi - Young Kim</small>
+
 </html>

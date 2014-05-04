@@ -81,6 +81,20 @@
 
 }
 
+#eventboxlogoutbig {
+
+  
+  width: 850px;
+  height: 150px;
+  border: 1px dashed white;
+  background-color: rgb(219, 219, 219);
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 7px rgb(100, 100, 100);
+
+}
+
 #eventboxleft:hover {
 
   background-color: rgb(73, 241, 112);
@@ -100,6 +114,12 @@
 }
 
 #eventboxlogout:hover {
+
+  background-color: rgb(255, 125, 34);
+
+}
+
+#eventboxlogoutbig:hover {
 
   background-color: rgb(255, 125, 34);
 
@@ -146,6 +166,13 @@ h2 {
   color: rgb(78, 85, 108);
 }
 
+h3 {
+
+  font-size: 40px;
+  text-align: left;
+  color: rgb(78, 85, 108);
+}
+
 small {
 
   font-size: 20px;
@@ -174,3 +201,14 @@ small {
 
   display: block;
 }
+
+input {
+      
+      font-family: 'Francois One', sans-serif;
+      width: 100%;
+      font-size:   30px; 
+      padding:     0.1em;
+      height: 53px; 
+      
+
+} 
