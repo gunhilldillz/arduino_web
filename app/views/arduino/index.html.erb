@@ -1,37 +1,55 @@
 <div id="wrapper">
 
-<div id="centerimg"><img src="http://localhost:8081/"></div>
+<div id="centerimg"><img src="http://localhost:8081/" width="850" height="455"></div>
+
+<br>
+
 <hr>
-<div id="centerimg"><%= link_to image_tag("camera_icon.svg",height: '117', width: '117') , :controller => "arduino", :action => "index", method: :post, remote: true %>
 
- <%= link_to image_tag("up_arrow.svg", :alt => "up",  height: '117', width: '117') , :controller => "arduino", :action => "up", method: :post,
+<div id="centerimg"><%= link_to image_tag("camera_icon.svg",height: '166', width: '166') , :controller => "arduino", :action => "index", method: :post, remote: true %>
+
+ <%= link_to image_tag("up_arrow.svg", :alt => "up",  height: '166', width: '166') , :controller => "arduino", :action => "up", method: :post,
 remote: true %>
 
-<%= link_to image_tag("down_arrow.svg", :alt => "down",  height: '117', width: '117') , :controller => "arduino", :action => "down", method: :post,
+<%= link_to image_tag("down_arrow.svg", :alt => "down",  height: '166', width: '166') , :controller => "arduino", :action => "down", method: :post,
 remote: true %>
 
-<%= link_to image_tag("left_arrow.svg", :alt => "left",  height: '117', width: '117') , :controller => "arduino", :action => "left", method: :post,
+<%= link_to image_tag("left_arrow.svg", :alt => "left",  height: '166', width: '166') , :controller => "arduino", :action => "left", method: :post,
 remote: true %>
 
-<%= link_to image_tag("right_arrow.svg", :alt => "right",  height: '117', width: '117') , :controller => "arduino", :action => "right", method: :post,
+<%= link_to image_tag("right_arrow.svg", :alt => "right",  height: '166', width: '166') , :controller => "arduino", :action => "right", method: :post,
 remote: true %>
 </div>
 
-<%= link_to image_tag("light_button.svg",height: '117', width: '117') , :controller => "arduino", :action => "index", method: :post, remote: true %>
+<div id="centerimg">
+<%= link_to image_tag("light_button.svg",height: '166', width: '166') , :controller => "arduino", :action => "index", method: :post, remote: true %>
 
 
-<img src="/images/off_button_1.svg" id="one_on" onclick="toggleState_one(this)" width="117" height="117">
+<img src="/images/off_button_1.svg" id="one_on" onclick="toggleState_one(this)" width="166" height="166">
 
-<img src="/images/off_button_2.svg" id="two_on" onclick="toggleState_two(this)" width="117" height="117">
+<img src="/images/off_button_2.svg" id="two_on" onclick="toggleState_two(this)" width="166" height="166">
 
-<img src="/images/off_button_3.svg" id="three_on" onclick="toggleState_three(this)" width="117" height="117">
-
-<img src="/images/off_button_4.svg" id="four_on" onclick="toggleState_four(this)" width="117" height="117">
+<img src="/images/off_button_3.svg" id="three_on" onclick="toggleState_three(this)" width="166" height="166">
 
 
+<img src="/images/off_button_4.svg" id="four_on" onclick="toggleState_four(this)" width="166" height="166">
+</div>
+<hr>
 
+<br>
+<div id="eventboxresetall"><h1>
+RESET ALL
+   </h1></div>
 
+<div id="eventboxlogout"><h1>
+<% if current_user %>
+      <%= link_to "Log Out", logout_path%>
+    <!-- Logged in as <%= current_user.email %>. -->
+    
 
+    <% else %>
+    <%end%>
+   </h1></div>
 
 
 </div>

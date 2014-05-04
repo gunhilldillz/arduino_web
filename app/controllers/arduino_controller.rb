@@ -1,13 +1,10 @@
 class ArduinoController < ApplicationController
 
-layout "arduino"
+layout "application"
 
 before_filter :set_up_servo
  
   def index
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
     
     if Led1pos.last.on_off.to_s == "on"
       @led_one.on
@@ -37,6 +34,8 @@ before_filter :set_up_servo
       Led4pos.create(on_off: "off")
     end
 
+    @servox.position = Servoposx.last.xloc
+    @servoy.position = Servoposy.last.yloc
 
   end
 
@@ -50,7 +49,6 @@ before_filter :set_up_servo
     redirect_to :back
 
   end
-
 
   def down
 
@@ -85,8 +83,8 @@ before_filter :set_up_servo
 
   end
 
-
 #LED functions
+
   def one_on
    
     if Led1pos.last.on_off.to_s == "off"
@@ -99,12 +97,9 @@ before_filter :set_up_servo
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    
     redirect_to :back
   
   end
-
-  
 
   def one_off
     
@@ -138,8 +133,6 @@ before_filter :set_up_servo
   
   end
 
-  
-
   def two_off
     
     if Led2pos.last.on_off.to_s == "on"
@@ -172,8 +165,6 @@ before_filter :set_up_servo
   
   end
 
-  
-
   def three_off
     
     if Led3pos.last.on_off.to_s == "on"
@@ -200,14 +191,11 @@ before_filter :set_up_servo
     end
 
     @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    
+    @servoy.position = Servoposy.last.yloc  
     
     redirect_to :back
   
   end
-
-  
 
   def four_off
     
@@ -226,8 +214,10 @@ before_filter :set_up_servo
   end
 
   def set_up_servo
+
     @servox = Dino::Components::Servo.new(pin: 9, board: DinoRails::Application.config.board)
     @servoy = Dino::Components::Servo.new(pin: 10, board: DinoRails::Application.config.board)
+    
     @led_one = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
     @led_two = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
     @led_three = Dino::Components::Led.new(pin: 8, board: DinoRails::Application.config.board)
