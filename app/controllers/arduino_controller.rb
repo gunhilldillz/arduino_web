@@ -8,6 +8,35 @@ before_filter :set_up_servo
 
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
+    
+    if Led1pos.last.on_off.to_s == "on"
+      @led_one.on
+    else
+      @led_one.off
+      Led1pos.create(on_off: "off")
+    end
+
+    if Led2pos.last.on_off.to_s == "on"
+      @led_two.on
+    else
+      @led_two.off
+      Led2pos.create(on_off: "off")
+    end
+
+    if Led3pos.last.on_off.to_s == "on"
+      @led_three.on
+    else
+      @led_three.off
+      Led3pos.create(on_off: "off")
+    end
+
+    if Led4pos.last.on_off.to_s == "on"
+      @led_four.on
+    else
+      @led_four.off
+      Led4pos.create(on_off: "off")
+    end
+
 
   end
 
@@ -56,14 +85,22 @@ before_filter :set_up_servo
 
   end
 
+
+#LED functions
   def one_on
    
-    @led_one.on
+    if Led1pos.last.on_off.to_s == "off"
+      @led_one.on
+      Led1pos.create(on_off: "on")
+    else
+      
+    end
+
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
     
-   render :nothing => true
+    redirect_to :back
   
   end
 
@@ -71,22 +108,33 @@ before_filter :set_up_servo
 
   def one_off
     
-    @led_one.off
-
+    if Led1pos.last.on_off.to_s == "on"
+      @led_one.off
+      Led1pos.create(on_off: "off")
+    else
+      
+    end
+    
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    render :nothing => true
+    redirect_to :back
+ 
   end
-
+  
   def two_on
    
-    @led_two.on
+    if Led2pos.last.on_off.to_s == "off"
+      @led_two.on
+      Led2pos.create(on_off: "on")
+    else
+      
+    end
+
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    
-   render :nothing => true
+    redirect_to :back
   
   end
 
@@ -94,22 +142,33 @@ before_filter :set_up_servo
 
   def two_off
     
-    @led_two.off
-
+    if Led2pos.last.on_off.to_s == "on"
+      @led_two.off
+      Led2pos.create(on_off: "off")
+    else
+      
+    end
+    
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    render :nothing => true
+    redirect_to :back
+ 
   end
 
   def three_on
    
-    @led_three.on
+    if Led3pos.last.on_off.to_s == "off"
+      @led_three.on
+      Led3pos.create(on_off: "on")
+    else
+      
+    end
+
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    
-   render :nothing => true
+    redirect_to :back
   
   end
 
@@ -117,22 +176,34 @@ before_filter :set_up_servo
 
   def three_off
     
-    @led_three.off
-
+    if Led3pos.last.on_off.to_s == "on"
+      @led_three.off
+      Led3pos.create(on_off: "off")
+    else
+      
+    end
+    
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    render :nothing => true
+    redirect_to :back
+ 
   end
 
   def four_on
    
-    @led_four.on
+    if Led4pos.last.on_off.to_s == "off"
+      @led_four.on
+      Led4pos.create(on_off: "on")
+    else
+      
+    end
+
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
     
-   render :nothing => true
+    redirect_to :back
   
   end
 
@@ -140,12 +211,17 @@ before_filter :set_up_servo
 
   def four_off
     
-    @led_four.off
+    if Led4pos.last.on_off.to_s == "on"
+      @led_four.off
+      Led4pos.create(on_off: "off")
+    else
+      
+    end
 
     @servox.position = Servoposx.last.xloc
     @servoy.position = Servoposy.last.yloc
     
-    render :nothing => true
+    redirect_to :back
  
   end
 

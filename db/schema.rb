@@ -11,10 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140423162529) do
+ActiveRecord::Schema.define(version: 20140504171947) do
 
   create_table "arduinos", force: true do |t|
     t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "led1pos", force: true do |t|
+    t.string   "on_off"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "led2pos", force: true do |t|
+    t.string   "on_off"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "led3pos", force: true do |t|
+    t.string   "on_off"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "led4pos", force: true do |t|
+    t.string   "on_off"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
