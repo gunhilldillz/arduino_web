@@ -4,14 +4,17 @@ function toggleState_one(image){
 			image.src = 'images/off_button_1.svg';
 			image.idName="one_off";	
 			  $.get('/one_off');
+			  	
 			
 		} 
 		else {
 			image.src = 'images/on_button_1.svg';	
 			image.idName="one_on";
 			$.get('/one_on');	
-					
+				
 		}
+
+
  	};
 
 
@@ -59,9 +62,6 @@ function toggleState_four(image4){
 					
 		}
 	};
-
-
-
 
 
 

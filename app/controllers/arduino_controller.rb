@@ -35,9 +35,10 @@ before_filter :set_up_servo
     end
 
     @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
+    @servoy.position = Servoposy.last.yloc  
 
   end
+
 
   def reset
 

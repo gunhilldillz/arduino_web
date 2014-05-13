@@ -9,7 +9,7 @@
 
 #wrapper {
   
-  width: 850px;
+  width: 575px;
   
   display: block;
   border: 1px dashed rgb(244, 242, 244);
@@ -27,8 +27,8 @@
 
 #eventboxleft {
 
-  width: 400px;
-  height: 150px;
+  width: 270px;
+  height: 115px;
   border: 1px dashed white;
   background-color: rgb(219, 219, 219);
   display: inline-block;
@@ -42,8 +42,8 @@
 #eventboxright {
 
   float: right;
-  width: 400px;
-  height: 150px;
+  width: 270px;
+  height: 115px;
   border: 1px dashed white;
   background-color: rgb(219, 219, 219);
   display: inline-block;
@@ -55,8 +55,8 @@
 
 #eventboxresetall {
 
-  width: 400px;
-  height: 150px;
+  width: 270px;
+  height: 115px;
   border: 1px dashed white;
   background-color: rgb(219, 219, 219);
   display: inline-block;
@@ -70,8 +70,8 @@
 #eventboxlogout {
 
   float: right;
-  width: 400px;
-  height: 150px;
+  width: 270px;
+  height: 115px;
   border: 1px dashed white;
   background-color: rgb(219, 219, 219);
   display: inline-block;
@@ -84,8 +84,8 @@
 #eventboxlogoutbig {
 
   
-  width: 850px;
-  height: 150px;
+  width: 575px;
+  height: 115px;
   border: 1px dashed white;
   background-color: rgb(219, 219, 219);
   display: inline-block;
@@ -129,21 +129,21 @@
 
 #assignmenttxt {
 
-  font-size: 20px;
+  font-size: 13px;
   text-align: justify;
   color: rgb(78, 85, 108);
 }
 
 #assignmenthead {
 
-  font-size: 25px;
+  font-size: 16px;
   color: rgb(78, 85, 108);
 }
 
 #eventtxt {
 
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 #centerimg { 
@@ -154,28 +154,28 @@
 
 h1 {
 
-  font-size: 50px;
+  font-size: 38px;
   text-align: center;
   color: rgb(78, 85, 108);
 }
 
 h2 {
 
-  font-size: 40px;
+  font-size: 26px;
   text-align: center;
   color: rgb(78, 85, 108);
 }
 
 h3 {
 
-  font-size: 40px;
+  font-size: 26px;
   text-align: left;
   color: rgb(78, 85, 108);
 }
 
 small {
 
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
   color: rgb(78, 85, 108);
   font-family: 'Francois One', sans-serif;
@@ -185,7 +185,7 @@ small {
 
 p  {
 
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   color: rgb(78, 85, 108);
 }
@@ -206,7 +206,7 @@ input {
       
       font-family: 'Francois One', sans-serif;
       width: 100%;
-      font-size:   30px; 
+      font-size:   20px; 
       padding:     0.1em;
       height: 53px; 
       
