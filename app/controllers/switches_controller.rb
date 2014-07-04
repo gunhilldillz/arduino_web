@@ -1,5 +1,7 @@
 class SwitchesController < ApplicationController
-	#no front-end for this, yet!
+	#no front-end for this, yet
+	# This class is called by clock worker, every saturday.:q
+
 	def index
     if Switch1pos.last.on_off.to_s == "on"
       @switch_one.on
@@ -34,7 +36,7 @@ class SwitchesController < ApplicationController
 
   end
 
-
+# TODO No for model here! Let us try having a json file instead. 
   def reset
     Switch1pos.create(on_off: "off")
     Switch2pos.create(on_off: "off")

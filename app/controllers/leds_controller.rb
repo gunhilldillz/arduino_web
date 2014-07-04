@@ -2,7 +2,6 @@ class LedsController < ApplicationController
 	before_action :set_up_servo
  
   def index
-    
     if Led1pos.last.on_off.to_s == "on"
       @led_one.on
     else
@@ -50,49 +49,7 @@ class LedsController < ApplicationController
 
   end
 
-  def up
-
-    @pos = Servoposy.all
-    @inc_by_five = @pos.last.yloc.to_i
-    @new_pos = @inc_by_five + 10
-    Servoposy.create(yloc: @new_pos.to_i)
-
-    redirect_to :back
-
-  end
-
-  def down
-
-    @pos = Servoposy.all
-    @inc_by_five = @pos.last.yloc.to_i
-    @new_pos = @inc_by_five - 10
-    Servoposy.create(yloc: @new_pos.to_i)
-
-    redirect_to :back
-
-  end
-
-  def left
-
-    @pos = Servoposx.all
-    @dec_by_five = @pos.last.xloc.to_i
-    @new_pos = @dec_by_five - 10
-    Servoposx.create(xloc: @new_pos.to_i)
-
-    redirect_to :back
-
-  end
-
-  def right
-
-    @pos = Servoposx.all
-    @inc_by_five = @pos.last.xloc.to_i
-    @new_pos = @inc_by_five + 10
-    Servoposx.create(xloc: @new_pos.to_i)
-
-    redirect_to :back
-
-  end
+  
 
 #LED functions
 
@@ -209,7 +166,6 @@ class LedsController < ApplicationController
   end
 
   def four_off
-    
     if Led4pos.last.on_off.to_s == "on"
       @led_four.off
       Led4pos.create(on_off: "off")
@@ -226,11 +182,8 @@ class LedsController < ApplicationController
 
   private
 
-    def set_up_servo
-     begin
-      @servox = Dino::Components::Servo.new(pin: 9, board: DinoRails::Application.config.board)
-      @servoy = Dino::Components::Servo.new(pin: 10, board: DinoRails::Application.config.board)
-      
+    def set_up_led
+     begin      
       @led_one = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
       @led_two = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
       @led_three = Dino::Components::Led.new(pin: 8, board: DinoRails::Application.config.board)
