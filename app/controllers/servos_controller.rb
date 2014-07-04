@@ -1,0 +1,2 @@
+class ServosController < ApplicationController
+end
