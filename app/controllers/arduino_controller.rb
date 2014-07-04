@@ -1,8 +1,8 @@
 class ArduinoController < ApplicationController
 
-layout "application"
+  layout "application"
 
-before_filter :set_up_servo
+  before_action :set_up_servo
  
   def index
     
@@ -227,20 +227,22 @@ before_filter :set_up_servo
  
   end
 
-  def set_up_servo
-   begin
-    @servox = Dino::Components::Servo.new(pin: 9, board: DinoRails::Application.config.board)
-    @servoy = Dino::Components::Servo.new(pin: 10, board: DinoRails::Application.config.board)
-    
-    @led_one = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
-    @led_two = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
-    @led_three = Dino::Components::Led.new(pin: 8, board: DinoRails::Application.config.board)
-    @led_four = Dino::Components::Led.new(pin: 7, board: DinoRails::Application.config.board) 
-   rescue Dino::BoarNotFound
-      flash.new.alert = "Please connect your Board to continue" 
-   end
+  private
 
-  end
+    def set_up_servo
+     begin
+      @servox = Dino::Components::Servo.new(pin: 9, board: DinoRails::Application.config.board)
+      @servoy = Dino::Components::Servo.new(pin: 10, board: DinoRails::Application.config.board)
+      
+      @led_one = Dino::Components::Led.new(pin: 13, board: DinoRails::Application.config.board)
+      @led_two = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
+      @led_three = Dino::Components::Led.new(pin: 8, board: DinoRails::Application.config.board)
+      @led_four = Dino::Components::Led.new(pin: 7, board: DinoRails::Application.config.board) 
+     rescue Dino::BoarNotFound
+        flash.new.alert = "Please connect your Board to continue" 
+     end
+
+    end
   
   
 end
