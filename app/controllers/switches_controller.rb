@@ -1,12 +1,10 @@
 class SwitchesController < ApplicationController
-	#no front-end for this, yet
-	# This class is called by clock worker, every saturday.:q
-
+  
 	def index
     if Switch1pos.last.on_off.to_s == "on"
       @switch_one.on
     else
-      @led_one.off
+      @switch_one.off
       Switchpos.create(on_off: "off")
     end
 
@@ -30,10 +28,6 @@ class SwitchesController < ApplicationController
       @switch_four.off
       Switch4pos.create(on_off: "off")
     end
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc  
-
   end
 
 # TODO No for model here! Let us try having a json file instead. 
@@ -69,10 +63,7 @@ class SwitchesController < ApplicationController
     else
       
     end
-    
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    
+  
     redirect_to :back
  
   end
@@ -80,15 +71,11 @@ class SwitchesController < ApplicationController
   def two_on
    
     if Switch2pos.last.on_off.to_s == "off"
-      @led_two.on
+      @Switch_two.on
       Switch2pos.create(on_off: "on")
     else
       
     end
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    
     redirect_to :back
   
   end
@@ -96,14 +83,11 @@ class SwitchesController < ApplicationController
   def two_off
     
     if Switch2pos.last.on_off.to_s == "on"
-      @led_two.off
+      @switch_two.off
       Switch2pos.create(on_off: "off")
     else
       
     end
-    
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
     
     redirect_to :back
  
@@ -112,15 +96,11 @@ class SwitchesController < ApplicationController
   def three_on
    
     if Switch3pos.last.on_off.to_s == "off"
-      @led_three.on
+      @switch_three.on
       Switch3pos.create(on_off: "on")
     else
       
     end
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    
     redirect_to :back
   
   end
@@ -128,15 +108,12 @@ class SwitchesController < ApplicationController
   def three_off
     
     if Switch3pos.last.on_off.to_s == "on"
-      @led_three.off
+      @switch_three.off
       SWitch3pos.create(on_off: "off")
     else
       
     end
-    
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    
+  
     redirect_to :back
  
   end
@@ -144,15 +121,12 @@ class SwitchesController < ApplicationController
   def four_on
    
     if Switch4pos.last.on_off.to_s == "off"
-      @led_four.on
+      @switch_four.on
       Switch4pos.create(on_off: "on")
     else
       
     end
 
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc  
-    
     redirect_to :back
   
   end
@@ -160,15 +134,11 @@ class SwitchesController < ApplicationController
   def four_off
     
     if Switch4pos.last.on_off.to_s == "on"
-      @led_four.off
+      @switch_four.off
       Switch4pos.create(on_off: "off")
     else
       
     end
-
-    @servox.position = Servoposx.last.xloc
-    @servoy.position = Servoposy.last.yloc
-    
     redirect_to :back
   end
 end
