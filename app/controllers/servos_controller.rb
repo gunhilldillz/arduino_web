@@ -7,9 +7,7 @@ class ServosController < ApplicationController
     @inc_by_five = @pos.last.yloc.to_i
     @new_pos = @inc_by_five + 10
     Servoposy.create(yloc: @new_pos.to_i)
-
     redirect_to :back
-
   end
 
   def down
@@ -17,9 +15,7 @@ class ServosController < ApplicationController
     @inc_by_five = @pos.last.yloc.to_i
     @new_pos = @inc_by_five - 10
     Servoposy.create(yloc: @new_pos.to_i)
-
     redirect_to :back
-
   end
 
   def left
@@ -27,7 +23,6 @@ class ServosController < ApplicationController
     @dec_by_five = @pos.last.xloc.to_i
     @new_pos = @dec_by_five - 10
     Servoposx.create(xloc: @new_pos.to_i)
-
     redirect_to :back
   end
 
@@ -36,10 +31,14 @@ class ServosController < ApplicationController
     @inc_by_five = @pos.last.xloc.to_i
     @new_pos = @inc_by_five + 10
     Servoposx.create(xloc: @new_pos.to_i)
-
     redirect_to :back
   end
   
+  def reset_servo
+  	Servoposy.create(yloc: 90.to_i)
+    Servoposx.create(xloc: 90.to_i)
+  end
+
   private
 
 	 def set_up_servo
