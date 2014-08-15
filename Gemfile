@@ -33,13 +33,17 @@ group :doc do
 end
 
 gem 'dino'
-gem 'faker'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-# better errors
 
-gem 'better_errors', '~> 1.1.0'
-gem 'debugger'
+
+group :development, :test do
+	gem 'better_errors', '~> 1.1.0' # better errors
+	gem 'capybara'
+	gem 'rspec-rails'
+	gem 'faker'
+	gem 'debugger'
+end
