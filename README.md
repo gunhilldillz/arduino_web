@@ -1,4 +1,3 @@
-Final Project
 
 Arduino Home Control Portal
 

@@ -26,6 +26,7 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem 'clockwork', git: 'git@github.com:tomykaira/clockwork.git' # Scheduled Tasks
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -33,13 +34,19 @@ group :doc do
 end
 
 gem 'dino'
-gem 'faker'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'angular-rails'
 
-# better errors
 
-gem 'better_errors', '~> 1.1.0'
-gem 'debugger'
+
+group :development, :test do
+	gem 'better_errors', '~> 1.1.0' # better errors
+	gem 'capybara'
+	gem 'capybara-angular'
+	gem 'rspec-rails'
+	gem 'faker'
+	gem 'debugger'
+end
